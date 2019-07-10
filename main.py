@@ -2,6 +2,7 @@ from __future__ import print_function
 import boto3
 
 client = boto3.resource('dynamodb')
+table = client.Table('YOUR_TABLE_NAME')
 
 def build_speechlet_response(output, should_end_session):
     return {
@@ -22,7 +23,6 @@ def MarksHandler(intent):
     last_subject = intent['slots']['subject']['value']
     last_mark = intent['slots']['mark']['value']
     
-    table = client.Table('MedieScolastiche')
     getItem = table.get_item(Key = { 'subject': last_subject })
     marks = float(getItem['Item']['marks'])
     num = getItem['Item']['num']
@@ -41,7 +41,6 @@ def MarksHandler(intent):
 def AverageHandler(intent):
     last_subject = intent['slots']['subject']['value']
     
-    table = client.Table('MedieScolastiche')
     getItem = table.get_item(Key = { 'subject': last_subject })
     marks = float(getItem['Item']['marks'])
     num = float(getItem['Item']['num'])
@@ -55,8 +54,7 @@ def AverageHandler(intent):
     
 def ResetSubjectHanlder(intent):
     last_subject = intent['slots']['subject']['value']
-    
-    table = client.Table('MedieScolastiche')
+
     var = table.put_item(Item = { 'subject': last_subject, 'marks': 0, 'num': 0 })
      
     speech_output = "OK, ho azzerato voti e la media di " + last_subject
@@ -65,7 +63,6 @@ def ResetSubjectHanlder(intent):
     return build_response(build_speechlet_response(speech_output, shouldEndSession))
     
 def ResetAllHanlder(intent):
-    table = client.Table('MedieScolastiche')
     for i in range(len(subjects)):
         var = table.put_item(Item = { 'subject': subjects[i], 'marks': 0, 'num': 0 })
     
