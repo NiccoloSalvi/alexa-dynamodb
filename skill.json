@@ -1,0 +1,86 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "media scolastica",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Marks",
+                    "slots": [
+                        {
+                            "name": "mark",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "subject",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "oggi {mark} in {subject}",
+                        "ho conseguito un {mark} in {subject}",
+                        "{mark} in {subject}",
+                        "ho preso {mark} in {subject}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Average",
+                    "slots": [
+                        {
+                            "name": "subject",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "{subject}",
+                        "quale è la mia media in {subject}",
+                        "la media in {subject}",
+                        "media {subject}",
+                        "media in {subject}"
+                    ]
+                },
+                {
+                    "name": "ResetAll",
+                    "slots": [],
+                    "samples": [
+                        "azzera tutto",
+                        "reset tutto",
+                        "cancella tutto",
+                        "azzera",
+                        "reset"
+                    ]
+                },
+                {
+                    "name": "ResetSubject",
+                    "slots": [
+                        {
+                            "name": "subject",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "azzera {subject}",
+                        "reset {subject}",
+                        "cancella {subject}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
