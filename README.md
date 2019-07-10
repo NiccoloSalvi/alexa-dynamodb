@@ -9,7 +9,7 @@
 
 **Badges will go here**
 
-- build status
+- Login in <a href="https://aws.amazon.com/"</a>
 - issues (waffle.io maybe)
 - devDependencies
 - npm package
