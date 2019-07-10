@@ -10,12 +10,9 @@
 **Badges will go here**
 
 - Login in https://aws.amazon.com/
-- issues (waffle.io maybe)
-- devDependencies
-- npm package
-- coverage
-- slack
-- downloads
-- gitter chat
-- license
-- etc.
+- Search DynamoDB from services
+- Create a Table
+- Use the partition key: "subject"
+- add subject "name", marks 0 and num 0
+- change subjects in the lambda function
+- start using your new skill
