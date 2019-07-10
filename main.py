@@ -131,6 +131,7 @@ intents = [
     ["ResetAll", ResetAllHanlder]
 ]
 
+#YOUR SUBJECTS, THE SAME YOU ADD IN THE AMAZON-DB TABLE
 subjects = [
     "informatica",
     "inglese",
