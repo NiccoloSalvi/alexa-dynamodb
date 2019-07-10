@@ -9,7 +9,7 @@
 
 **Badges will go here**
 
-- Login in <a href="https://aws.amazon.com/"</a>
+- Login in https://aws.amazon.com/
 - issues (waffle.io maybe)
 - devDependencies
 - npm package
