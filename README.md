@@ -1,10 +1,11 @@
-# Repository Title Goes Here
+# Alexa-DynamoDB
+> A sample Alexa-skill that uses AmazonDB to store data.
 
-> Subtitle or Short Description Goes Here
+> Tired of apps where you have to add school marks and calculate your average? No more, noy you can do this just using the voice!
 
-> ideally one sentence
-
-> include terms/tags that can be searched
+> Alexa skills
+> DynamoDB
+> VoiceInterface
 
 **Badges will go here**
 
