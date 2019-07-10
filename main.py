@@ -133,13 +133,9 @@ intents = [
 
 #YOUR SUBJECTS, THE SAME YOU ADD IN THE AMAZON-DB TABLE
 subjects = [
-    "informatica",
-    "inglese",
-    "italiano",
-    "matematica",
-    "motoria",
-    "sistemi",
-    "telecomunicazioni",
-    "storia",
-    "progettazione"
+    "",
+    "",
+    "",
+    "",
+    ""
 ]
